@@ -1,3 +1,7 @@
+![](https://img.shields.io/badge/React-16.13-61dafb?logo=react)
+![](https://img.shields.io/github/last-commit/tiagoc-aguiar/react-crud-artigo1?color=e05042&logo=git)
+![Lines of code](https://img.shields.io/tokei/lines/github/tiagoc-aguiar/react-crud-artigo1)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
