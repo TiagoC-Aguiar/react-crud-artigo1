@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import AddUserForm from './forms/AddUserForm'
+import AddUserForm from './components/forms/AddUserForm'
 import UserTable from './tables/UserTable'
-import EditUserForm from './forms/EditUserForm'
+import EditUserForm from './components/forms/EditUserForm'
 
   const App = () => {
     const usersData = [
