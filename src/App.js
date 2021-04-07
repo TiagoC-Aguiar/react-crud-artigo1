@@ -5,6 +5,8 @@ import UserTable from './components/tables/UserTable'
 import EditUserForm from './components/forms/EditUserForm'
 import Header from './components/Header';
 
+import './App.css'
+
 const usersData = [
   {id: 1, name: 'Tania', username: 'floppydiskette'},
   {id: 2, name: 'Craig', username: 'siliconeidolon'},
