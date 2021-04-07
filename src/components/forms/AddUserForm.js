@@ -1,4 +1,5 @@
-import React, {useState} from 'react'
+import React, {useState} from 'react';
+import {Button} from '@material-ui/core';
 
 const AddUserForm = props => {
 
@@ -26,7 +27,9 @@ const AddUserForm = props => {
       <label>Username
         <input type="text" name="username" value={user.username} onChange={handleInputChange} />
       </label><br/>
-      <button type="submit">Add new user</button><br/>
+      <Button variant="contained" color="primary" type="submit">
+        New User
+      </Button>
     </form>
   )
 }

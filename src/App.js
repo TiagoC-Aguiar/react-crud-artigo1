@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import AddUserForm from './components/forms/AddUserForm'
 import UserTable from './components/tables/UserTable'
 import EditUserForm from './components/forms/EditUserForm'
+import Header from './components/Header';
 
 const usersData = [
   {id: 1, name: 'Tania', username: 'floppydiskette'},
@@ -43,7 +44,7 @@ const App = () => {
 
   return (
     <div className="container">
-      <h1>CRUD App with Hooks</h1>
+      <Header />
       <div className="flex-row">
         <div className="flex-large">
           {editing ? (
