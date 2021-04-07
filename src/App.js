@@ -1,14 +1,16 @@
 import React, { useState } from 'react'
+
 import AddUserForm from './components/forms/AddUserForm'
-import UserTable from './tables/UserTable'
+import UserTable from './components/tables/UserTable'
 import EditUserForm from './components/forms/EditUserForm'
 
-  const App = () => {
-    const usersData = [
-      {id: 1, name: 'Tania', username: 'floppydiskette'},
-      {id: 2, name: 'Craig', username: 'siliconeidolon'},
-      {id: 3, name: 'Ben', username: 'benisphere'},
-    ]
+const usersData = [
+  {id: 1, name: 'Tania', username: 'floppydiskette'},
+  {id: 2, name: 'Craig', username: 'siliconeidolon'},
+  {id: 3, name: 'Ben', username: 'benisphere'},
+];
+
+const App = () => {
 
   const [users, setUsers] = useState(usersData)
 
