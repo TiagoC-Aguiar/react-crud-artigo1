@@ -10,10 +10,10 @@ module.exports = {
   },
   coverageThreshold: {
     global: {
-      statements: 18,
-      branches: 49,
-      functions: 37,
-      lines: 18,
+      statements: 39,
+      branches: 73,
+      functions: 60,
+      lines: 39,
     },
   },
   setupFilesAfterEnv: ["<rootDir>/jest.setup.js"],
