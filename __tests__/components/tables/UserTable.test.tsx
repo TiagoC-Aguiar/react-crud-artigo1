@@ -1,7 +1,6 @@
 import React from "react";
 import { render, fireEvent } from "@testing-library/react";
-import UserTable from "../../../src/components/tables/UserTable";
-
+import UserTable from "~/components/tables/UserTable";
 
 describe("UserTable component", () => {
   const usersData = [

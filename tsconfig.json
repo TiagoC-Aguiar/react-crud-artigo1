@@ -14,7 +14,7 @@
     "allowImportingTsExtensions": false /* Allow imports to include TypeScript file extensions. Requires '--moduleResolution bundler' and either '--noEmit' or '--emitDeclarationOnly' to be set. */,
     "baseUrl": "src",
     "paths": {
-      "~/*": ["*"]
+      "~/*": ["./app/*"]
     },
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
   },

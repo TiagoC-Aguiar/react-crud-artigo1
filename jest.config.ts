@@ -6,7 +6,7 @@ module.exports = {
   collectCoverageFrom: ["**/src/**/!(*.d).{js,jsx,ts,tsx}"],
   testEnvironment: "jsdom",
   moduleNameMapper: {
-    "^~/(.*)$": "<rootDir>/src/$1",
+    "^~/(.*)$": "<rootDir>/src/app/$1",
   },
   preset: "ts-jest",
   coverageThreshold: {
