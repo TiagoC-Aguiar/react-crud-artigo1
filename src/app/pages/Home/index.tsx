@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 import { AddUserForm, EditUserForm, Header, UserTable } from 'app/components';
+import { initialFormState, usersData } from 'app/data';
 import './style.css';
 
 export type UserType = {
@@ -8,13 +9,6 @@ export type UserType = {
   name: string;
   username: string;
 };
-
-const usersData = [
-  { id: 1, name: 'Tania', username: 'floppydiskette' },
-  { id: 2, name: 'Craig', username: 'siliconeidolon' },
-  { id: 3, name: 'Ben', username: 'benisphere' },
-];
-const initialFormState = { id: 0, name: '', username: '' };
 
 const Home = () => {
   const [users, setUsers] = useState(usersData);

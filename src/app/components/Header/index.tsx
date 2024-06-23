@@ -1,9 +1,7 @@
 import './Header.css';
 
 const Header = () => {
-  return (
-    <h1>CRUD App with Hooks</h1>
-  )
-}
+  return <h1 className="title">CRUD App with Hooks</h1>;
+};
 
 export default Header;

@@ -12,9 +12,10 @@
     "forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
     "strict": true /* Enable all strict type-checking options. */,
     "allowImportingTsExtensions": false /* Allow imports to include TypeScript file extensions. Requires '--moduleResolution bundler' and either '--noEmit' or '--emitDeclarationOnly' to be set. */,
+    "allowJs": true,
     "baseUrl": "src",
     "paths": {
-      "~/*": ["./app/*"]
+      "app/*": ["./app/*"]
     },
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
   },

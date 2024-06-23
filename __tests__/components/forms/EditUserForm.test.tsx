@@ -1,6 +1,5 @@
-import React from "react";
 import { render, fireEvent } from "@testing-library/react";
-import EditUserForm from "../../../src/components/forms/EditUserForm";
+import { EditUserForm } from "app/components";
 
 describe("EditUserForm", () => {
   const currentUser = { id: 1, name: "John Doe", username: "johndoe" };

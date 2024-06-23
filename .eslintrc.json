@@ -8,5 +8,6 @@
   "plugins": ["react-refresh"],
   "parserOptions": {
     "project": "./tsconfig.json"
-  }
+  },
+  "ignorePatterns": ["jest.*.ts", "tsconfig.json"]
 }

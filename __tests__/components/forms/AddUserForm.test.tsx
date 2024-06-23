@@ -1,5 +1,5 @@
 import { render, fireEvent } from "@testing-library/react";
-import AddUserForm from "~/components/forms/AddUserForm";
+import AddUserForm from "app/components/forms/AddUserForm";
 
 describe("AddUserForm", () => {
   const mockAddUser = jest.fn();
@@ -35,7 +35,7 @@ describe("AddUserForm", () => {
 
     expect(mockAddUser).toHaveBeenCalledTimes(1);
     expect(mockAddUser).toHaveBeenCalledWith({
-      id: null,
+      id: 0,
       name: "John Doe",
       username: "johndoe",
     });
@@ -87,7 +87,7 @@ describe("AddUserForm", () => {
 
     expect(mockAddUser).toHaveBeenCalledTimes(1);
     expect(mockAddUser).toHaveBeenCalledWith({
-      id: null,
+      id: 0,
       name: "John Doe",
       username: "johndoe",
     });
