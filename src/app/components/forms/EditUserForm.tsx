@@ -1,8 +1,9 @@
-import { useState, useEffect, FC, ChangeEvent } from "react";
+import { useState, useEffect, FC, ChangeEvent } from 'react';
+import { UserType } from 'app/pages/Home';
 
 type EditUserFormProps = {
-  currentUser: any;
-  updateUser: (id: number, updatedUser: any) => void;
+  currentUser: UserType;
+  updateUser: (id: number, updatedUser: UserType) => void;
   setEditing: (bool: boolean) => void;
 };
 
