@@ -1,6 +1,5 @@
-import React from "react";
 import { render, fireEvent } from "@testing-library/react";
-import AddUserForm from "../../../src/components/forms/AddUserForm";
+import AddUserForm from "app/components/forms/AddUserForm";
 
 describe("AddUserForm", () => {
   const mockAddUser = jest.fn();
@@ -36,7 +35,7 @@ describe("AddUserForm", () => {
 
     expect(mockAddUser).toHaveBeenCalledTimes(1);
     expect(mockAddUser).toHaveBeenCalledWith({
-      id: null,
+      id: 0,
       name: "John Doe",
       username: "johndoe",
     });
@@ -60,17 +59,18 @@ describe("AddUserForm", () => {
       <AddUserForm addUser={mockAddUser} />
     );
 
-    const nameInput = getByLabelText("Name");
+    const nameInput = getByLabelText("Name") as HTMLInputElement;
+    const userNameInput = getByLabelText(/Username/i) as HTMLInputElement;
     fireEvent.change(nameInput, {
       target: { value: "John Doe" },
     });
-    fireEvent.change(getByLabelText(/Username/i), {
+    fireEvent.change(userNameInput, {
       target: { value: "johndoe" },
     });
     fireEvent.submit(getByText(/New User/i));
 
     expect(nameInput.value).toBe("");
-    expect(getByLabelText(/Username/i).value).toBe("");
+    expect(userNameInput.value).toBe("");
   });
 
   test("handles form submission with Enter key", () => {
@@ -87,7 +87,7 @@ describe("AddUserForm", () => {
 
     expect(mockAddUser).toHaveBeenCalledTimes(1);
     expect(mockAddUser).toHaveBeenCalledWith({
-      id: null,
+      id: 0,
       name: "John Doe",
       username: "johndoe",
     });

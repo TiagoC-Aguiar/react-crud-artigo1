@@ -1,11 +1,36 @@
+# React CRUD Application
+
 ![](https://img.shields.io/badge/React-18.3-61dafb?logo=react)
 ![](https://img.shields.io/github/last-commit/tiagoc-aguiar/react-crud-artigo1?color=e05042&logo=git)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/TiagoC-Aguiar/react-crud-artigo1)
 ![GitHub top language](https://img.shields.io/github/languages/top/TiagoC-Aguiar/react-crud-artigo1)
 
+This project is a simple CRUD (Create, Read, Update, Delete) application built with React and Create React App. It's designed to be a starting point for building more complex applications with similar functionality.
+
+## Getting Started
+To get started with this project, follow these steps:
+
+1. Clone the repository: git clone https://github.com/tiagoc-aguiar/react-crud-artigo1.git
+
+2. Navigate to the project directory: cd react-crud-artigo1
+
+3. Install the dependencies: yarn install (or npm install)
+
+4. Start the development server: yarn start (or npm start)
+
+The application will be available at http://localhost:3000 in your browser.
 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Structure
+The project is organized into the following key directories and files:
+
+* `public`: Contains static assets like the application's favicon and index HTML file.
+* `__tests__`: Houses test files for the application.
+* `src`: The main source code directory.
+components: Contains reusable React components.
+App.js: The main application component.
+index.js: The entry point for the application.
+
 
 ## Available Scripts
 
