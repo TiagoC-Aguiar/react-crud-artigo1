@@ -8,6 +8,7 @@ module.exports = {
   moduleNameMapper: {
     "^~/(.*)$": "<rootDir>/src/$1",
   },
+  preset: "ts-jest",
   coverageThreshold: {
     global: {
       statements: 55,
@@ -16,5 +17,5 @@ module.exports = {
       lines: 55,
     },
   },
-  setupFilesAfterEnv: ["<rootDir>/jest.setup.js"],
+  setupFilesAfterEnv: ["<rootDir>/jest.setup.ts"],
 };

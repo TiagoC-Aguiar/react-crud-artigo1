@@ -16,8 +16,11 @@ describe("EditUserForm", () => {
       />
     );
 
-    expect(getByLabelText("Name").value).toBe("John Doe");
-    expect(getByLabelText("Username").value).toBe("johndoe");
+    const nameInput = getByLabelText("Name") as HTMLInputElement;
+    const userNameInput = getByLabelText(/Username/i) as HTMLInputElement;
+
+    expect(nameInput.value).toBe("John Doe");
+    expect(userNameInput.value).toBe("johndoe");
   });
 
   test("calls updateUser function with correct user data when form is submitted", () => {
@@ -69,15 +72,17 @@ describe("EditUserForm", () => {
       />
     );
 
-    fireEvent.change(getByLabelText("Name"), {
+    const nameInput = getByLabelText("Name") as HTMLInputElement;
+    const userNameInput = getByLabelText("Username") as HTMLInputElement;
+    fireEvent.change(nameInput, {
       target: { value: "Jane Doe" },
     });
-    fireEvent.change(getByLabelText("Username"), {
+    fireEvent.change(userNameInput, {
       target: { value: "janedoe" },
     });
 
-    expect(getByLabelText("Name").value).toBe("Jane Doe");
-    expect(getByLabelText("Username").value).toBe("janedoe");
+    expect(nameInput.value).toBe("Jane Doe");
+    expect(userNameInput.value).toBe("janedoe");
   });
 
   test("calls updateUser function with correct user data when form is submitted with Enter key", () => {
