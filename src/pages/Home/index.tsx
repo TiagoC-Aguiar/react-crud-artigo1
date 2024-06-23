@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { AddUserForm, EditUserForm, Header, UserTable } from "../../components";
+import { AddUserForm, EditUserForm, Header, UserTable } from "components";
 import "./style.css";
 
 export type UserType = {
@@ -32,13 +32,11 @@ const Home = () => {
 
   const editRow = (user: UserType) => {
     setEditing(true);
-
     setCurrentUser({ id: user.id, name: user.name, username: user.username });
   };
 
   const updateUser = (id: number, updateUser: UserType) => {
     setEditing(false);
-
     setUsers(users.map((user) => (user.id === id ? updateUser : user)));
   };
 
