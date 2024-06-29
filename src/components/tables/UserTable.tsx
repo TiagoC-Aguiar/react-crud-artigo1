@@ -1,10 +1,10 @@
-import { FC } from "react";
-import { UserType } from "../../pages/Home";
+import { FC } from 'react';
+import { UserType } from '~/user/UserPage';
 
 type UserTableProps = {
   users: Array<UserType>;
   deleteUser: (id: number) => void;
-  editRow: (user: any) => void;
+  editRow: (user: UserType) => void;
 };
 
 const UserTable: FC<UserTableProps> = (props) => (

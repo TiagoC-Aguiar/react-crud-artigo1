@@ -1,13 +1,14 @@
 import { ChangeEvent, FC, useState } from 'react';
 import { Button } from '@mui/material';
-import { UserType } from 'app/pages/Home';
-import { initialFormState } from 'app/data';
+import { UserType } from '~/user/UserPage';
+import { initialFormState } from '~/data';
+import { Input } from './components';
 
 type AddUserFormProps = {
   addUser: (user: UserType) => void;
 };
 
-const AddUserForm: FC<AddUserFormProps> = (props) => {
+const AddUser: FC<AddUserFormProps> = (props) => {
   const [user, setUser] = useState(initialFormState);
 
   const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -25,25 +26,19 @@ const AddUserForm: FC<AddUserFormProps> = (props) => {
         setUser(initialFormState);
       }}
     >
-      <label>
-        Name
-        <input
-          type="text"
-          name="name"
-          value={user.name}
-          onChange={handleInputChange}
-        />
-      </label>
+      <Input
+        label="Name"
+        value={user.name}
+        name="name"
+        onChange={handleInputChange}
+      />
       <br />
-      <label>
-        Username
-        <input
-          type="text"
-          name="username"
-          value={user.username}
-          onChange={handleInputChange}
-        />
-      </label>
+      <Input
+        label="Username"
+        value={user.username}
+        name="username"
+        onChange={handleInputChange}
+      />
       <br />
       <Button variant="contained" color="primary" type="submit">
         New User
@@ -52,4 +47,4 @@ const AddUserForm: FC<AddUserFormProps> = (props) => {
   );
 };
 
-export default AddUserForm;
+export default AddUser;
