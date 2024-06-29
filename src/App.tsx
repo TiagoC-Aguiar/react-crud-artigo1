@@ -1,5 +1,5 @@
-import Home from "~/pages/Home";
-import "./App.css";
+import Home from '~/user/UserPage';
+import './App.css';
 
 const App = () => {
   return <Home />;

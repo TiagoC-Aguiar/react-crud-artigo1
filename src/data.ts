@@ -1,4 +1,4 @@
-import { UserType } from './pages/Home';
+import { UserType } from './user/UserPage';
 
 export const usersData: Array<UserType> = [
   { id: 1, name: 'Tania', username: 'floppydiskette' },

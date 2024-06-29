@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { AddUserForm, EditUserForm, Header, UserTable } from '~/components';
+import { AddUser, EditUserForm, Header, UserTable } from '~/components';
 import { initialFormState, usersData } from '~/data';
 import './style.css';
 
@@ -51,7 +51,7 @@ const Home = () => {
           ) : (
             <div>
               <h2>Add user</h2>
-              <AddUserForm addUser={addUser} />
+              <AddUser addUser={addUser} />
             </div>
           )}
         </div>

@@ -1,13 +1,13 @@
 import { ChangeEvent, FC, useState } from 'react';
 import { Button } from '@mui/material';
-import { UserType } from '~/pages/Home';
+import { UserType } from '~/user/UserPage';
 import { initialFormState } from '~/data';
 
 type AddUserFormProps = {
   addUser: (user: UserType) => void;
 };
 
-const AddUserForm: FC<AddUserFormProps> = (props) => {
+const AddUser: FC<AddUserFormProps> = (props) => {
   const [user, setUser] = useState(initialFormState);
 
   const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -52,4 +52,4 @@ const AddUserForm: FC<AddUserFormProps> = (props) => {
   );
 };
 
-export default AddUserForm;
+export default AddUser;
