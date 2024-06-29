@@ -15,7 +15,7 @@
     "allowJs": true,
     "baseUrl": "src",
     "paths": {
-      "app/*": ["./app/*"]
+      "~/*": ["./*"]
     },
     "skipLibCheck": true,
     "noFallthroughCasesInSwitch": true

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
-import { AddUserForm, EditUserForm, Header, UserTable } from 'app/components';
-import { initialFormState, usersData } from 'app/data';
+import { AddUserForm, EditUserForm, Header, UserTable } from '~/components';
+import { initialFormState, usersData } from '~/data';
 import './style.css';
 
 export type UserType = {

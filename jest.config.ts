@@ -10,9 +10,9 @@ export default {
     '.+\\.(ts|tsx)$': 'ts-jest',
   },
   moduleNameMapper: {
-    '^app/(.*)$': '<rootDir>/src/app/$1',
-    'app/__tests__/(.*)': '<rootDir>/__tests__/$1',
-    'app/(.*)': '<rootDir>/src/$1',
+    '^~/(.*)$': '<rootDir>/src/$1',
+    '~/__tests__/(.*)': '<rootDir>/__tests__/$1',
+    '~/(.*)': '<rootDir>/src/$1',
     '\\.css$': 'identity-obj-proxy',
   },
   preset: 'ts-jest',

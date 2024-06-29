@@ -1,5 +1,5 @@
 import { useState, useEffect, FC, ChangeEvent } from 'react';
-import { UserType } from 'app/pages/Home';
+import { UserType } from '~/pages/Home';
 
 type EditUserFormProps = {
   currentUser: UserType;

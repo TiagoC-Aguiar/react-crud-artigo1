@@ -1,5 +1,5 @@
 import { render, fireEvent } from "@testing-library/react";
-import AddUserForm from "app/components/forms/AddUserForm";
+import AddUserForm from "~/components/forms/AddUserForm";
 
 describe("AddUserForm", () => {
   const mockAddUser = jest.fn();

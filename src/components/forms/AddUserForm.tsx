@@ -1,7 +1,7 @@
 import { ChangeEvent, FC, useState } from 'react';
 import { Button } from '@mui/material';
-import { UserType } from 'app/pages/Home';
-import { initialFormState } from 'app/data';
+import { UserType } from '~/pages/Home';
+import { initialFormState } from '~/data';
 
 type AddUserFormProps = {
   addUser: (user: UserType) => void;

@@ -10,7 +10,7 @@ export default {
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.scss'],
     alias: {
-      app: path.resolve(__dirname, 'src/app'),
+      '~': path.resolve(__dirname, 'src'),
     },
   },
   output: {
