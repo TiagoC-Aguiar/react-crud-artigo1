@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { UserType } from '../../user/UserPage';
+import { UserType } from '~/user/UserPage';
 
 type UserTableProps = {
   users: Array<UserType>;
