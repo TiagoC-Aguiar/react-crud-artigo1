@@ -9,5 +9,5 @@
   "parserOptions": {
     "project": "./tsconfig.json"
   },
-  "ignorePatterns": ["jest.*.ts", "tsconfig.json", "webpack.config.ts"]
+  "ignorePatterns": ["jest.*.ts", "tsconfig.json", "webpack.config.ts", "dist"]
 }

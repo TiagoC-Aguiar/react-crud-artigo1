@@ -2,7 +2,8 @@ import { useState } from 'react';
 
 import { AddUser, EditUserForm, Header, UserTable } from '~/components';
 import { initialFormState, usersData } from '~/data';
-import './style.css';
+import { BoxWithTitle } from './components';
+import './style.scss';
 
 export type UserType = {
   id: number;
@@ -40,25 +41,22 @@ const Home = () => {
       <div className="flex-row">
         <div className="flex-large">
           {editing ? (
-            <div>
-              <h2>Edit user</h2>
+            <BoxWithTitle headingText="Edit user">
               <EditUserForm
                 setEditing={setEditing}
                 currentUser={currentUser}
                 updateUser={updateUser}
               />
-            </div>
+            </BoxWithTitle>
           ) : (
-            <div>
-              <h2>Add user</h2>
+            <BoxWithTitle headingText="Add user">
               <AddUser addUser={addUser} />
-            </div>
+            </BoxWithTitle>
           )}
         </div>
-        <div className="flex-large">
-          <h2>View users</h2>
+        <BoxWithTitle headingText="View users">
           <UserTable users={users} deleteUser={deleteUser} editRow={editRow} />
-        </div>
+        </BoxWithTitle>
       </div>
     </div>
   );

@@ -1,8 +1,12 @@
 import Home from '~/user/UserPage';
-import './App.css';
+import './App.scss';
 
 const App = () => {
-  return <Home />;
+  return (
+    <div className="app-container">
+      <Home />
+    </div>
+  );
 };
 
 export default App;
