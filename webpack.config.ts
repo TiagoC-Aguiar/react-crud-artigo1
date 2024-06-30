@@ -1,5 +1,4 @@
 import path from 'path';
-import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
@@ -64,7 +63,6 @@ export default {
     port: 3000,
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       template: './index.html',
       favicon: './public/favicon.ico',
